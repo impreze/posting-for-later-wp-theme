@@ -1,0 +1,377 @@
+
+/*
+  ========================================
+  Wrapper Styling
+  ========================================
+*/
+
+#wrapper {
+    padding-top:45px;
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+}
+
+a, 
+a:visited {  
+    color: #567EBB;
+    text-decoration: none;
+    -o-transition:.25s;
+    -ms-transition:.25s;
+    -moz-transition:.25s;
+    -webkit-transition:.25s;
+    transition:.25s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abel',arial,sans-serif;
+}
+
+
+
+@media (min-width: 768px) {
+    #main-content {
+        margin-left:20px
+    }
+}
+
+#main-content img {
+    max-width: 800px;
+    width: 90%;
+    display: block;
+    margin: 15px auto;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.videoWrapper iframe, .videoWrapper object, .videoWrapper embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+/*
+  ========================================
+  Post Styling
+  ========================================
+*/
+
+.post {
+    background: #fff;
+    margin-bottom: 24px;    
+    width:100%;
+}
+
+.post a, 
+.post a:visited {  
+    color: #567EBB;
+    text-decoration: none;
+    -o-transition:.25s;
+    -ms-transition:.25s;
+    -moz-transition:.25s;
+    -webkit-transition:.25s;
+    transition:.25s;
+}
+
+.post a:hover {
+    color: #f45161; 
+}
+
+.post-title a,
+.post-title a:visited {
+    font-size:48px;  
+    color: #191919;
+}
+
+.post-title a:hover { 
+    color: #898989;
+}
+
+.post-meta {
+    font-size:12px;
+    line-height: 18px;
+    margin-bottom: 2px;
+}
+
+.post-content {
+    margin: 15px 0;
+}
+
+
+
+/*
+  ========================================
+  Sidebar Styling
+  ========================================
+*/
+
+
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+
+.sidebar-nav {
+    color: #000;
+    text-align: center;
+}
+
+
+
+.sidebar-nav a {
+    color: #000;
+}
+
+
+#logo {
+    max-width: 200px;
+    margin: 0px auto 30px auto;
+}
+
+#logo img {
+    width:100%;
+    height: auto;
+}
+
+
+/* Site Info */
+
+#site-info {
+    width:80%;
+    margin: 0 auto 30px auto;
+}
+
+/* make sidebar nav vertical */ 
+@media (min-width: 768px) {
+    .sidebar-nav .navbar .navbar-collapse {
+        padding: 0;
+        max-height: none;
+    }
+    .sidebar-nav .navbar ul {
+        float: none;
+    }
+    .sidebar-nav .navbar ul:not {
+        display: block;
+    }
+    .sidebar-nav .navbar li {
+        float: none;
+        display: block;
+    }
+    .sidebar-nav .navbar li a {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    /* uncomment if you would like the menu to be fixed */
+    .navbar {
+        position: fixed;
+        width: 170px;
+        z-index: 2;
+    } 
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        width: 212px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar {
+        width: 262px;
+    }
+}
+
+.sidebar-nav .navbar-header{ 
+    float: none; 
+}
+
+
+/*
+  ========================================
+  Forms
+  ========================================
+*/
+
+/* FORMS */
+
+form  {
+    width:94%;
+    margin:0px;
+    padding:10px;
+    border: 2px #ccc solid;
+    border-radius:5px;
+}
+
+
+form h2 {
+    display:inline;
+}
+
+
+.required-notification {
+    font-size: 11px;
+    color:#FBB03B; 
+    margin:5px 0 0 0; 
+    display:inline;
+    float:right;
+}
+
+
+
+form label {
+    width:150px;
+    margin-top: 3px;
+    display:inline-block;
+    padding:3px;
+}
+
+.form input {
+    height:20px; 
+    width:220px; 
+    padding:5px 8px;
+    display:inline-block;
+}
+
+form textarea {
+    padding:8px;
+    width:300px;
+}
+
+form button {
+    margin-left:156px;
+}
+
+form input[type="text"], form input[type="email"], form input[type="url"], form textarea {
+    border-radius:2px;
+    -moz-transition: padding .25s; 
+    -webkit-transition: padding .25s; 
+    -o-transition: padding .25s;
+    transition: padding .25s;
+}
+
+form input:focus, form textarea:focus {
+    padding-right:70px;
+}
+
+form input:focus:invalid, form textarea:focus:invalid { 
+    border-color: #a7772b
+}
+
+form input:required:valid, form textarea:required:valid { 
+    border-color: #28921f;
+}
+
+form select {
+    height:20px; 
+    width:220px; 
+}
+
+button {
+    background-color: #FBB03B;
+    border: 0px solid #FBB03B;
+    border-bottom: 1px solid #FBB03B;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;    
+    color: white;
+    padding: 6px 20px;
+    text-align: center;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+button:hover {
+    opacity:.85;
+    cursor: pointer;
+}
+
+
+
+
+/* OVERRIDES */
+
+*:focus {outline: none;}
+
+:-moz-placeholder {
+    color: #567EBB;
+    opacity: 0.25;
+}
+ 
+::-webkit-input-placeholder {
+    color: #567EBB;
+}
+
+
+/*
+  ========================================
+  Pagination
+  ========================================
+*/
+
+
+ul.page-numbers {
+    list-style: none;
+    margin: 0;
+}
+
+.page-numbers:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+ul.page-numbers li {
+    display: block;
+    float: left;
+    margin: 0 4px 4px 0;
+    text-align: center;
+}
+
+.page-numbers a,
+.page-numbers span {
+    line-height: 1.6em;
+    display: block;
+    padding: 0 6px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: #888;
+}
+
+.page-numbers a span { padding: 0 }
+
+.page-numbers a:hover,
+.page-numbers.current,
+.page-numbers.current:hover {
+    color: #000;
+    background: #f7f7f7;
+    text-decoration: none;
+}
+
+.page-numbers:hover { text-decoration: none }
